@@ -6,7 +6,6 @@
 	<artifactId>test-jenkins</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
-	<classifier>mule-application</classifier>
 
 	<name>test</name>
 
