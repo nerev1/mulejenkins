@@ -30,15 +30,25 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<cloudHubDeployment>
-						<username>nerev49</username>
+					<cloudhub2Deployment>
+						<provider>MC</provider>
 						<environment>Sandbox</environment>
-						<workers>1</workers>
-						<workerType>Micro</workerType>
-						<applicationName>test-jenkins-app</applicationName>
-						<password>Qwerty1!</password>
+						<target>cloudhub-eu-central-1</target>
 						<muleVersion>4.9.0</muleVersion>
-					</cloudHubDeployment>
+						<username>nerev49</username>
+						<password>Qwerty1!</password>
+						<applicationName>test-jenkins-app</applicationName>
+						<replicas>1</replicas>
+						<vCores>1</vCores>
+						<deploymentSettings>
+							<http>
+								<inbound>
+									<forwardSslSession>true</forwardSslSession>
+									<lastMileSecurity>true</lastMileSecurity>
+								</inbound>
+							</http>
+						</deploymentSettings>
+					</cloudhub2Deployment>
 				</configuration>
 			</plugin>
 		</plugins>
