@@ -33,7 +33,6 @@
 					<cloudhub2Deployment>
 						<provider>MC</provider>
 						<environment>Sandbox</environment>
-						<target>cloudhub-eu-central-1</target>
 						<muleVersion>4.9.0</muleVersion>
 						<username>nerev49</username>
 						<password>Qwerty1!</password>
